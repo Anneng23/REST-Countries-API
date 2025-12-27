@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>REST Countries API</title>
+  <link rel="stylesheet" href="countries.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Country Information App</h1>
+      <button id="themeToggle">🌙</button>
+    </header>
+
+    <div class="search-section">
+      <input type="text" id="countryInput" placeholder="Enter country name" />
+      <button id="searchBtn">Search</button>
+      <p id="loading" class="hidden">Loading...</p>
+      <p id="error" class="error"></p>
+    </div>
+
+    <div id="result" class="result"></div>
+
+    <!-- Compare section (hidden at first) -->
+    <div id="compareArea" class="compare-area">
+      <div id="compareControls">
+        <button id="compareRun" disabled>Compare (0/2)</button>
+        <button id="clearCompare">Clear</button>
+      </div>
+      <div id="compareResults" class="compare-results"></div>
+    </div>
+
+    <footer>
+      <p>Data from REST Countries API</p>
+    </footer>
+  </div>
+
+  <script src="countries.js"></script>
+</body>
+</html>

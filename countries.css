@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image: url(images/image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background-color: rgba(112, 103, 103, 0.5);
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-section {
+  margin-top: 10px;
+}
+
+input {
+  width: 70%;
+  padding: 20px;
+  margin-right: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 20px 15px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.error {
+  color: red;
+  margin-top: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+.result {
+  margin-top: 10px;
+}
+
+.country-card {
+  background: hsl(206, 22%, 70%);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+.country-card img {
+  max-width: 100px;
+}
+
+/* Compare area */
+.compare-area {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(200,255,255,0.06);
+}
+
+.compare-results {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.compare-card {
+  flex: 1 1 45%;
+  background: rgba(112, 103, 103, 0.5); 
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+}
+
+.add-compare {
+  margin-top: 8px;
+  padding: 8px 10px;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-compare.selected {
+  background: #28a745;
+}
+
+/* Dark mode */
+body.dark {
+  background-image: url(images/image1.png);
+  color: #e1e1e1;
+}
+
+body.dark .container {
+  background: #1f2937;
+}
+
+body.dark input,
+body.dark button {
+  background: #3b4351;
+  color: white;
+  border: 1px solid #555;
+}
+
+body.dark .country-card {
+  background: #2a2f42;
+}

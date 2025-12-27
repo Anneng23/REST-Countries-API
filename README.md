@@ -8,7 +8,7 @@ A web application that searches and compares 2 countries using the REST Countrie
 - Displays:
   - Flag
   - Capital
-  - Population
+  - population
   - Region
 - Loading indicator
 - Error messages for not found results
